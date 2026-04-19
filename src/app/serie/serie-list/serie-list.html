@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Channel</th>
+        <th scope="col">Seasons</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let serie of series">
+        <th scope="row">{{ serie.id }}</th>
+        <td><a [href]="serie.webpage" target="_blank">{{ serie.name }}</a></td>
+        <td>{{ serie.channel }}</td>
+        <td>{{ serie.seasons }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Seasons average: {{ averageSeasons }}</p>
+</div>
