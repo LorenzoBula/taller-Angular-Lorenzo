@@ -2,7 +2,7 @@ export class Serie {
   id: number;
   name: string;
   channel: string;
-  seasons: number; // Aquí está el atributo que te marcaba error
+  seasons: number;
   description: string;
   webpage: string;
   poster: string;
